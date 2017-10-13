@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试综合表头</title>
+	<link rel="stylesheet" type="text/css" href="./table.css">
+	<script type="text/javascript" src="./table.js"></script>
+</head>
+<body>
+	<div class="table-wrapper">
+		<div class="tablearea">
+			<div class="table-header">
+				<table cellspacing="0" cellpadding="0" border="0" >
+					<colgroup>
+						<col width="100px">
+						<col width="100px">
+						<col width="100px">
+						<col width="100px">
+						<col width="200px">
+						<col width="200px">
+						<col width="100px">
+					</colgroup>
+					<thead>
+					  <tr>
+							<th class="table-hidden">姓名</th>
+							<th>性别</th>
+							<th>民族</th>
+							<th>年龄</th>
+							<th>所在班级</th>
+							<th>地址</th>
+							<th class="table-hidden">电话</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="table-body" onscroll="tableScroll()">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<colgroup>
+						<col width="100px">
+						<col width="100px">
+						<col width="100px">
+						<col width="100px">
+						<col width="200px">
+						<col width="200px">
+						<col width="100px">
+					</colgroup>
+					<tbody class="table-tbody">
+						<tr class="table-row">
+							<td class="table-hidden">wangfei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade1</td>
+							<td>兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市</td>
+							<td class="table-hidden">18829349443</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">wangfei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade1</td>
+							<td>兰州市</td>
+							<td class="table-hidden">18829349443</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">wangfei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade1</td>
+							<td>兰州市</td>
+							<td class="table-hidden">18829349443</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">wangfei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade1</td>
+							<td>兰州市</td>
+							<td class="table-hidden">18829349443</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">wangfei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade1</td>
+							<td>兰州市</td>
+							<td class="table-hidden">18829349443</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">libei</td>
+							<td>女</td>
+							<td>汉</td>
+							<td>22</td>
+							<td>grade2</td>
+							<td>北京市</td>
+							<td class="table-hidden">13255666543</td>
+						</tr>
+						<tr class="table-row">
+							<td class="table-hidden">tangxiaoshu</td>
+							<td>男</td>
+							<td>汉</td>
+							<td>21</td>
+							<td>grade3</td>
+							<td>昆明市</td>
+							<td class="table-hidden">18829349887</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-fixed">
+				<div class="table-fixed-header">
+					<table cellspacing="0" cellpadding="0" border="0" >
+						<colgroup>
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="200px">
+							<col width="200px">
+							<col width="100px">
+						</colgroup>
+						<thead>
+						  <tr>
+								<th>姓名</th>
+								<th class="table-hidden">性别</th>
+								<th class="table-hidden">民族</th>
+								<th class="table-hidden">年龄</th>
+								<th class="table-hidden">所在班级</th>
+								<th class="table-hidden">地址</th>
+								<th class="table-hidden">电话</th>
+							</tr>
+						</thead>
+				  </table>
+				</div>
+				<div class="table-fixed-body">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<colgroup>
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="200px">
+							<col width="200px">
+							<col width="100px">
+						</colgroup>
+						<tbody class="table-tbody">
+							<tr class="table-row">
+								<td>wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市</td>
+								<td class="table-hidden">18829349443</td>
+							</tr>
+							<tr class="table-row">
+								<td>wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								<td class="table-hidden">18829349443</td>
+							</tr>
+							<tr class="table-row">
+								<td>wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								<td class="table-hidden">18829349443</td>
+							</tr>
+							<tr class="table-row">
+								<td>wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								<td class="table-hidden">18829349443</td>
+							</tr>
+							<tr class="table-row">
+								<td>libei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade2</td>
+								<td class="table-hidden">北京市</td>
+								<td class="table-hidden">13255666543</td>
+							</tr>
+							<tr class="table-row">
+								<td>tangxiaoshu</td>
+								<td class="table-hidden">男</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">21</td>
+								<td class="table-hidden">grade3</td>
+								<td class="table-hidden">昆明市</td>
+								<td class="table-hidden">18829349887</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="table-fixed-right">
+				<div class="table-fixed-header">
+					<table cellspacing="0" cellpadding="0" border="0" >
+						<colgroup>
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="200px">
+							<col width="200px">
+							<col width="100px">
+						</colgroup>
+						<thead>
+						  <tr>
+								<th>电话</th>
+								<th class="table-hidden">姓名</th>
+								<th class="table-hidden">> 性别</th>
+								<th class="table-hidden">民族</th>
+								<th class="table-hidden">年龄</th>
+								<th class="table-hidden">所在班级</th>
+								<th class="table-hidden">地址</th>
+							</tr>
+						</thead>
+				  </table>
+				</div>
+				<div class="table-fixed-body">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<colgroup>
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="100px">
+							<col width="200px">
+							<col width="200px">
+							<col width="100px">
+						</colgroup>
+						<tbody class="table-tbody">
+							<tr class="table-row">
+								<td>18829349443</td>
+								<td class="table-hidden">wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市兰州市</td>
+								
+							</tr>
+							<tr class="table-row">
+								<td>18829349443</td>
+								<td class="table-hidden">wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								
+							</tr>
+							<tr class="table-row">
+								<td>18829349443</td>
+								<td class="table-hidden">wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								
+							</tr>
+							<tr class="table-row">
+								<td>18829349443</td>
+								<td class="table-hidden">wangfei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade1</td>
+								<td class="table-hidden">兰州市</td>
+								
+							</tr>
+							<tr class="table-row">
+								<td>13255666543</td>
+								<td class="table-hidden">libei</td>
+								<td class="table-hidden">女</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">22</td>
+								<td class="table-hidden">grade2</td>
+								<td class="table-hidden">北京市</td>
+								
+							</tr>
+							<tr class="table-row">
+								<td>18829349887</td>
+								<td class="table-hidden">tangxiaoshu</td>
+								<td class="table-hidden">男</td>
+								<td class="table-hidden">汉</td>
+								<td class="table-hidden">21</td>
+								<td class="table-hidden">grade3</td>
+								<td class="table-hidden">昆明市</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

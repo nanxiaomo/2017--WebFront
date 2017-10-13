@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.table-wrapper {
+    position: relative;
+    border-left: 1px solid #dddee1;
+    height: 217px;
+    width: 550px;
+    margin: 0 auto;
+}
+.table-wrapper table {
+	table-layout: fixed;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.tablearea {
+	margin: 0 auto;
+	width: inherit;
+	padding: 0;
+	overflow: hidden;
+	color: #495060;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+.tablearea:after,.tablearea:before {
+    content: "";
+    position: absolute;
+    background-color: #dddee1;
+}
+.tablearea:before{
+	width: 100%;
+	height: 0px;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+
+}
+.tablearea td, .tablearea th {
+	border-right: 1px solid #e9eaec;
+    min-width: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /*text-overflow: ellipsis;*/
+    vertical-align: middle;
+    border-bottom: 1px solid #e9eaec;
+    height: 40px;
+    /*white-space: nowrap;
+    overflow: hidden;*/
+    background-color: #f8f8f9;
+}
+.tablearea td {
+	background-color: #fff;
+}
+.tablearea table {
+	table-layout: fixed;
+}
+.table-hidden {
+    visibility: hidden;
+}
+
+.table-header {
+	overflow: hidden;
+}
+.table-header table {
+	width: 900px;
+}
+.table-body {
+	height: 187px;
+	overflow: auto;
+	margin-right: -17px;
+}
+.table-body table{
+	width: 900px;
+}
+.table-fixed,.table-fixed-right {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 0 6px -2px rgba(0,0,0,.2);
+}
+.table-fixed-right:before,.table-fixed:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dddee1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.table-fixed-header {
+    overflow: hidden;
+}
+.table-fixed-header,.table-fixed-body,.table-fixed-header table,.table-fixed-body table{
+	width: 100px;
+}
+.table-fixed-body {
+	height: 170px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.table-fixed-right {
+    top: 0;
+    left: auto;
+    right: 0;
+    box-shadow: -2px 0 6px -2px rgba(0,0,0,.2);
+}
+.tablearea:after {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
