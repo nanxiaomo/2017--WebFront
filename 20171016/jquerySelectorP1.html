@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 选择器练习1</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		if (!(selected instanceof jQuery)) {
+    		return alert('不是有效的jQuery对象!');
+		}
+		$('#test-jquery').find('*').css('background-color', '');
+			selected.css('background-color', '#ffd351');
+    /*
+        仅选择JavaScript
+        $("#para-1")
+        仅选择Erlang
+        $('[class="color-red color-green"]');
+        选择JavaScript和Erlang
+        $('.color-red')
+        选择所有编程语言
+        $('[class^="color-"]')
+        选择名字input
+        $('input[name="name"]')
+        选择邮件和名字input
+        $('input[name="name"],input[name="email"]')
+	</script>
+</head>
+<body>
+	<div id="test-jquery">
+    <p id="para-1" class="color-red">JavaScript</p>
+    <p id="para-2" class="color-green">Haskell</p>
+    <p class="color-red color-green">Erlang</p>
+    <p name="name" class="color-black">Python</p>
+    <form class="test-form" target="_blank" action="#0" onsubmit="return false;">
+        <legend>注册新用户</legend>
+        <fieldset>
+            <p><label>名字: <input name="name"></label></p>
+            <p><label>邮件: <input name="email"></label></p>
+            <p><label>口令: <input name="password" type="password"></label></p>
+            <p><button type="submit">注册</button></p>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
