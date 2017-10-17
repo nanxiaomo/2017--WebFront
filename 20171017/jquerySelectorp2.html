@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习2</title>
+	<script type="text/javascript" src="/2017/10/16/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		// 分别选择所有语言，所有动态语言，所有静态语言，JavaScript，Lua，C等:
+		
+	// 所有语言
+    selected = $(".test-lang > li");
+
+    // 动态语言
+    selected = $("ul.test-lang > li");
+
+    // 静态语言
+    selected = $("ol.test-lang > li");
+
+    // js
+    selected = $("li.lang-javascript");
+
+    // lua
+    selected = $("li.lang-lua");
+
+    // c
+    selected = $("li.lang-c");
+	</script>
+</head>
+<body>
+	<div class="test-selector">
+    <ul class="test-lang">
+        <li class="lang-javascript">JavaScript</li>
+        <li class="lang-python">Python</li>
+        <li class="lang-lua">Lua</li>
+    </ul>
+    <ol class="test-lang">
+        <li class="lang-swift">Swift</li>
+        <li class="lang-java">Java</li>
+        <li class="lang-c">C</li>
+    </ol>
+</div>
+</body>
+</html>
