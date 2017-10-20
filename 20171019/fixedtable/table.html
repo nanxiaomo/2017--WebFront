@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>固定表头排序表</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/tablesort.js"></script>
+</head>
+
+<body>
+    <input type="button" value="按第二行排序" onclick="testee();" />
+    <input type="button" value="按第三行排序" onclick="testee3();" />
+    <div class="table-wrapper">
+        <!--固定头部-->
+        <div id="header_t">
+	        <table id="tableT">
+	            <thead>
+	                <tr></tr>
+	            </thead>
+	        </table>
+        </div>
+        <!--水平ヘッダー部-->
+        <div id="header_h">
+            <table id="tableH">
+                <thead>
+                    <tr></tr>
+                </thead>
+            </table>
+        </div>
+        <!--垂直ヘッダー部-->
+        <div id="header_v">
+            <table id="tableV">
+                <tbody></tbody>
+            </table>
+        </div>
+        <!--データ部-->
+        <div id="data">
+            <table id="tablesorter">
+                <thead>
+                    <tr>
+                        <th class="header" style="width: 120px;">固定固定項目固定項目固定項目固定項目項目</th>
+                        <th class="header" style="width: 180px;">固定项目項目１</th>
+                        <th class="header" style="width: 100px;">項目２</th>
+                        <th class="header" style="width: 100px;">項目３</th>
+                        <th class="header" style="width: 100px;"
+                        >項目４</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 120px;">項目名称A</td>
+                        <td style="width: 180px;">1スライドスライド項目A1スライド項目A1スライド項目A1スライド項目A1項目A1--</td>
+                        <td style="width: 180px;">項目M2</td>
+                        <td style="width: 180px;">スライド項目A3</td>
+                        <td style="width: 180px;">スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称B</td>
+                        <td>スライド項目B1</td>
+                        <td>1スライドスライド項目A1スライド項目A1スライド項目A1スライド項目A1項目A1--</td>
+                        <td>スライド項目B3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称C</td>
+                        <td>スライド項目C1</td>
+                        <td>項目C2</td>
+                        <td>スライド項目C3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称D</td>
+                        <td>スライド項目D1</td>
+                        <td>項目D2</td>
+                        <td>スライド項目D3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称E</td>
+                        <td>スライド項目E1</td>
+                        <td>項目B2</td>
+                        <td>スライド項目E3</td>
+                        <td>スライド項目E3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称F</td>
+                        <td>スライド項目F1</td>
+                        <td>項目B2</td>
+                        <td>スライド項目F3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称G</td>
+                        <td>スライド項目G1</td>
+                        <td>項目G2</td>
+                        <td>スライド項目G3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称H</td>
+                        <td>スライド項目H1</td>
+                        <td>項目H2</td>
+                        <td>スライド項目H3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称I</td>
+                        <td>スライド項目I1スライド項目I1スライド項目I1スライド項目I1スライド項目I1</td>
+                        <td>項目I2</td>
+                        <td>スライド項目I3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称J</td>
+                        <td>スライド項目J1</td>
+                        <td>項目J2</td>
+                        <td>スライド項目J3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称K</td>
+                        <td>スライド項目K1</td>
+                        <td>項目K2</td>
+                        <td>スライド項目K3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称L</td>
+                        <td>スライド項目L1スライド項目L1スライド項目L1スライド項目L1スライド項目L1</td>
+                        <td>項目L2</td>
+                        <td>スライド項目L3</td>
+                        <td>スライド項目B3</td>
+                    </tr>
+                    <tr>
+                        <td>項目名称M</td>
+                        <td>スライド項目M1</td>
+                        <td>項目M2</td>
+                        <td>スライド項目M3</td>
+                        <td>スライド項目M3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
