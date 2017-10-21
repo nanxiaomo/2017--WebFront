@@ -1,0 +1,74 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+#app {
+    height: 100%;
+    background-color: #F0F0F0;
+}
+.page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.weui_tabbar_icon {
+    text-align: center;
+}
+.x-footer .iconfont {
+    font-size: 20px;
+    color: #C5C5DA;
+    line-height: 49px;
+}
+.weui_tabbar{
+    height: 49px;
+}
+.weui_tabbar_label {
+    color: #C5C5DA;
+}
+.x-footer .weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
+    color: #0084FF;
+}
+.x-footer .weui_bar_item_on .iconfont {
+    color: #0084FF;
+}
+.x-footer .weui_tabbar_item {
+    padding: 0 0;
+}
+.content-wrap {
+    overflow-y: auto;
+}
+.flex-layout {
+    height: 100%;
+}
+.layout-wrap {
+    flex: 1;
+    overflow-y: auto;
+}
+.layout-footer {
+    height: 49px;
+}
+.more-wrap {
+    color: #666;
+    font-size: 14px;
+}
+.more-wrap .iconfont {
+    margin-right: 5px;
+}
+.layout-content {
+    width: 100%;
+}
+.layout-content .vux-header {
+    background-color: #f7f7fa;
+    border-bottom: 1px solid #D8D8D9;
+}
+.layout-content .vux-header h1 {
+    color: #4E5257;
+    font-weight: 700;
+}
+.layout-content .weui_switch:checked {
+    border-color: #0084FF;
+    background-color: #0084FF;
+}

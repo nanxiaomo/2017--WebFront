@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "没文化有多可怕",
+        "author": "艳艳",
+        "arttype": 1,
+        "images": "assets/images/article1.png",
+        "intro": "看到这个提问，我第一时间想到就是去年的新闻，想必很多朋友知道-----XXXX主席“熊艾春”.涉及到zhengzh",
+        "avatar": "assets/images/id1-img.jpg",
+        "agree": 1488
+    },
+    {
+        "id": 2,
+        "title": "建筑要不要搞理论？",
+        "author": "南萧亭",
+        "arttype": 0,
+        "images": " ",
+        "intro": "这个问题恐怕在中国的建筑学专业每代人都会问。但把思维的逻辑理清一些，好多似是而非的疑问是不难解答的。",
+        "avatar": "assets/images/id2-img.jpg",
+        "agree": 120
+    },
+    {
+        "id": 3,
+        "title": "怎样克服『选择恐惧症』",
+        "author": "简单心理J室长",
+        "arttype": 0,
+        "images": " ",
+        "intro": "海上钢琴师》里，有一段很经典的关于“选择”的论述。拒绝下船的主角1900对世界上唯一知晓他存在的朋友Max说：",
+        "avatar": "assets/images/id3-img.jpg",
+        "agree": 133
+    },
+    {
+        "id": 4,
+        "title": "如何看待滴滴收购Uber中国？",
+        "author": "何明科",
+        "arttype": 1,
+        "images": "assets/images/article2.png",
+        "intro": "再次证明有关互联网行业兼并收购的所有传言，都是真实的。即使一开始不是真实的，也会像魔咒一样，",
+        "avatar": "assets/images/id4-img.jpg",
+        "agree": 643
+    },
+    {
+        "id": 5,
+        "title": "传统木匠的基本工具有那些？",
+        "author": "郑爸爸",
+        "arttype": 0,
+        "images": " ",
+        "intro": "其实中国的传统木工工具，和中国其他的传统技艺一样，都曾达到过巅峰状态，但由于没能跟上时代发展，所以工",
+        "avatar": "assets/images/id5-img.jpg",
+        "agree": 110
+    },
+    {
+        "id": 6,
+        "title": "如何看懂剑道比赛？",
+        "author": "上泉澪",
+        "arttype": 0,
+        "images": " ",
+        "intro": "我以为要看懂剑道比赛，首先要明白剑道的比赛规则。",
+        "avatar": "assets/images/id6-img.jpg",
+        "agree": 194
+    },
+    {
+        "id": 7,
+        "title": "为什么很多人看电视只要没字幕就觉得听不清楚？",
+        "author": "暗涌",
+        "arttype": 0,
+        "images": " ",
+        "intro": "我来提供一种可能的解释吧。当我们听不到或听不清楚别人在说什么时，会怎样解读信息呢？我们有时候会从语。",
+        "avatar": "assets/images/id7-img.jpg",
+        "agree": 345
+    }
+]
