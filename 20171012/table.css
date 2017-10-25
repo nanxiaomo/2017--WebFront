@@ -45,7 +45,7 @@ thead {
     min-width: 0;
     box-sizing: border-box;
     text-align: center;
-    /*text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
     vertical-align: middle;
     border-bottom: 1px solid #e9eaec;
     height: 40px;

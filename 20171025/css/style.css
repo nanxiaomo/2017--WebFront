@@ -1,0 +1,17 @@
+.demo {
+	height: 300px;
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #9A7070;
+	background-color: #EFD8DA;
+	line-height: 300px;
+	text-align: center;
+	padding: 5px;
+}
+.container {
+	height: 200px;
+	overflow: auto;
+	border: 1px solid #000;
+	width: 500px;
+	margin: 0 auto;
+}
