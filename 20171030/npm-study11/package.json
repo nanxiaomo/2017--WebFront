@@ -1,0 +1,11 @@
+{
+  "name": "npm-study11",
+  "version": "1.0.0",
+  "description": "this is test npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangfei <cnxmhzk@gmail.com>",
+  "license": "ISC"
+}
