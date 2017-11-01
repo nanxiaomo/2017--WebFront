@@ -1,0 +1,128 @@
+﻿<html>
+<head>
+    <meta charset="utf-8"> 
+    <style type="text/css">
+    body{background: url(./yinghua.jpeg) 50% 0  no-repeat;}
+    *{font-family: STHei,"Microsoft Yahei";}
+        #content{ margin: 40px auto; text-align: center;;}
+        #content span{font-size: 10em; margin:3px;}
+        #container h1{text-align: center;; font-size: 50px; }
+        #container h2{text-align: center;}
+        #content button{ background: #a78; border:0; border-radius: 10px; cursor: pointer; color:#FFF;}
+        #content button:hover{background: #AAA;}
+        #content button:click{ background: #FFF; color: #333;}
+        #countTip{height:40px;}
+        #footer{ position: absolute;; bottom:10px; width:100%; text-align: center;;}
+    </style>
+    <title>演讲竞赛 5分钟倒计时</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1> 第七届辅导员业务能力竞赛5分钟倒计时</h1>
+            <h2></h2>
+            <div id="content">
+            <span class="min">00</span>
+            <span class="split">:</span>
+            <span class="sec">00</span>
+            <div id="countTip"></div>
+            <div id="reCount"><button id="reCountBtn">重新开始</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="stopCountBtn">暂停</button><button id="startCountBtn">开始</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="endCountBtn">结束</button></div>
+        </div>
+        <div id="footer">
+             
+        </div>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var totalTime = 5*60;
+            var reTotalTime = totalTime;
+            var flag = true;
+            var inter = null;
+            var body = $("#content");
+            function count(){
+                
+                var min=Math.floor(totalTime/60);
+                var sec = totalTime%60;
+                if(sec <10){
+                    sec = "0"+sec.toString();
+                }
+                if(min <10){
+                    min = "0"+min.toString();
+                }
+
+                body.find(".min").html(min);
+                body.find(".sec").html(sec);
+                if(totalTime <=0 || flag == false){
+                    flag = false;
+                    return ;
+                }
+                totalTime --;
+                
+            }
+                        var midFlag = false;
+
+            function midTip(_s){
+                var s = ":";
+                    if(midFlag )
+                    {
+                        s="";
+                    }else{
+                        s=":";
+                    }
+                    if(typeof(_s)!="undefind"){
+                        s=":";
+                    }
+                    body.find(".split").html("");
+            }
+            function loop(){
+                inter = setInterval(function(){
+                if(flag == false){
+                    clearInterval(inter);
+                    $("#countTip").html("计时结束");
+                }
+
+                 count();
+                },1000);
+            }
+            function flash(){
+               // body.find("span").css({"background":"#000"});
+              // setTimeout(function(){ body.find("span").css({"background":"transparent"}); },500);
+            }
+            
+            
+            $("#reCountBtn").click(function(){
+                clearInterval(inter);
+                flag = true;
+                $("#countTip").html("计时开始");
+                flash();
+                totalTime = reTotalTime;
+                loop();
+            });
+            $("#stopCountBtn").click(function(){
+                flag = false;
+                $("#countTip").html("计时暂停");
+
+                clearInterval(inter);
+                
+            });
+            $("#startCountBtn").click(function(){
+                flag = true;
+                loop();flash();
+                $("#countTip").html("计时开始");
+
+                
+            });
+            $("#endCountBtn").click(function(){
+                 flag = false;
+                 body.find(".min").html("00");
+                body.find(".sec").html("00");
+                
+                
+            });
+        });
+    </script>
+</html>
+    
