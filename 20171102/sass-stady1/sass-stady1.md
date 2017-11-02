@@ -27,7 +27,7 @@ sass -v           // 可以查看你安装的sass的版本
 
 sass 安装成功及版本信息
 
-![sass 安装成功及版本信息](./img/sass1.png)
+![sass 安装成功及版本信息](./img/sass1.PNG)
 
 ###传统编写形式
 
@@ -64,7 +64,7 @@ sass 源文件 目标文件
 
 成功画面
 
-![测试画面](./img/sass3.png)
+![测试画面](./img/sass3.PNG)
 
 ###使用compass
 
@@ -84,8 +84,7 @@ gem install compass  // 安装compass
 compass -v           // 可以查看你安装的compass的版本
 ```
 
-![compass 安装成功及版本信息](./img/sass4.png)
-
+![compass 安装成功及版本信息](./img/sass4.PNG)
 + **使用**
 
 安装好compass后就可以使用
@@ -95,6 +94,6 @@ compass  create *** // 文件名
 
 我建立了第一个compass-css文件作为第一个实验
 
-![sass 安装成功及版本信息](./img/sass5.png)
+![sass 安装成功及版本信息](./img/sass5.PNG)
 
 明天研究compass

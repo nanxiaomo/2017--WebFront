@@ -1,4 +1,4 @@
-#npm 学习笔记2
+# npm 学习笔记2
 
 + **npm outdated**
 
