@@ -29,7 +29,8 @@ sass 安装成功及版本信息
 
 ![sass 安装成功及版本信息](./img/sass1.png)
 
-## 传统编写形式
+###传统编写形式
+
 + 创建一个新的文件 style.sass
     
 ```sass
@@ -65,8 +66,10 @@ sass 源文件 目标文件
 
 ![测试画面](./img/sass3.png)
 
-##使用compass
+###使用compass
+
 参考资料
+
 >[compass 官网](http://compass-style.org/)</br>
 >[Compass用法指南](http://www.ruanyifeng.com/blog/2012/11/compass.html)
 
