@@ -1,0 +1,142 @@
+/*
+*author: wangfei;
+* 固定表头并排序样式表
+*2017/10/19
+*/
+/*--@Reset 部分-- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*-- @page  structure---*/
+/*--表格整体部分--*/
+#table-wrapper {
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+#table-wrapper table{
+    table-layout: fixed;
+}
+#header_t,#header_h,#header_v{
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#header_t,#header_h {
+    top: 0px;
+}
+#header_v {
+    left: 0px;
+}
+#data {
+    position: absolute;
+    overflow: auto;
+
+}
+/* 基础表格定义*/
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#header_t thead tr th,
+#header_h thead tr th,
+table#tablesorter thead tr th {
+    background-image: url(../img/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #015382;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #FFF;
+    padding: 4px;
+    vertical-align: middle;
+}
+#tablesorter tbody {
+    background-color: #CDCDCD;
+}
+#tableV tbody td,
+#tablesorter tbody td {
+    color: #3D3D3D;
+    padding: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-bottom: 1px rgba(145, 145, 173,.5) solid;
+    border-right: 1px rgba(145, 145, 173,.5) solid;
+}
+#tableV tbody td:first-child,
+#tablesorter tbody td:first-child {
+    border-left: 1px rgba(145,145,173,.5) solid;
+}
+#tableV tbody td {
+    box-shadow: 3px 0 6px -2px rgba(0,0,0,.4);
+    -mox-box-shadow: 3px 0 6px -2px rgba(0,0,0,.4);
+
+}
+#tablesorter tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  vertical-align: top;
+}
+#tablesorter tbody tr:nth-of-type(odd){
+    background-color: #ddd;
+}
+#tablesorter tbody tr:nth-of-type(odd){
+    background-color: #f7f5f5;
+}
+#tablesorter thead tr .headerSortDown, table#tablesorter thead tr .headerSortUp {
+background-color: #01B29C;
+}
+table#tableT thead tr .headerSortUp,
+table#tableH thead tr .headerSortUp
+{
+    background-image: url(./img/asc.gif);
+}
+table#tableT thead tr .headerSortDown 
+table#tableH thead tr .headerSortDown {
+    background-image: url(./img/desc.gif);
+}
