@@ -1,6 +1,7 @@
 # sass 学习笔记
 
 之前有接触过，再次学习，理解用法。知道怎么使用。
+
 ## 学习资源汇集
 + [**sass中文网**](http://www.sasschina.com/) (目前看英文文档有点费事)
 + [**SASS Tutorial**](https://www.youtube.com/watch?v=wz3kElLbEHE&t=626s)(一个小时简单介绍)
