@@ -1,1 +1,2 @@
 1. OOP-study.md 记录了我学习一些面向对象的概念
+2. sass-study2 是第二节学习sass。

@@ -1,0 +1,18 @@
+button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-left-color: #555; }
+
+.button-blue {
+  background-color: #5567ff;
+  color: #fff; }
+
+.button-red {
+  background-color: #FA0000;
+  color: #fff; }
+
+p.select {
+  color: #228; }
+
+/*# sourceMappingURL=style.css.map */

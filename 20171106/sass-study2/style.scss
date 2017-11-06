@@ -1,0 +1,26 @@
+
+$bg-blue: #5567ff;
+$button-width: 100px;
+$button-height: 50px;
+$button-border: 1px solid black;
+$left: left-color;
+$select: select;
+
+button{
+ 	width:$button-width;
+ 	height:$button-height;
+ 	border:$button-border;
+ 	border-#{$left}: #555;
+}
+.button-blue {
+ 	background-color: $bg-blue;
+ 	color: #fff;
+ }
+.button-red {
+	$bg-red: #FA0000 ; 
+	background-color: $bg-red;
+	color: #fff;
+}
+p.#{$select} {
+	color: #228;
+}
