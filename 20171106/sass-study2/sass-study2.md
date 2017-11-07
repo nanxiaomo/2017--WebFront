@@ -87,6 +87,15 @@ p.select {
 变量只能作为属性值来用，，我们需要#{}来将变量值转换为字符串，这样就可以用在选择器和属性上
 
 ## 本次问题
-在scss中加入中文注释会产生问题
-[compass sass 中文 错误的问题](http://blog.csdn.net/xiongzhengxiang/article/details/42499857)
+1. 在scss中加入中文注释会产生问题
+
+>[compass sass 中文 错误的问题](http://blog.csdn.net/xiongzhengxiang/article/details/42499857)
+
 目前尝试中文注释还有日文注释都会出现错误。
+ 
+2. 编译出来的css文件大括号
+
+```css
+p.select {
+  color: #228; }
+```
