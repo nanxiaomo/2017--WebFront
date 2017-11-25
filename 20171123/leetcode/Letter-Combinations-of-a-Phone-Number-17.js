@@ -19,15 +19,15 @@ var letterCombinations = function(digits) {
         return [];
         
     if(digits.length === 1)
-        return mappings[parseInt(digits)];
+        return phoneMap[parseInt(digits)];
         
     var workingIndex = 1;
-    var temp = mappings[parseInt(digits[0])];
-    var ret = mappings[parseInt(digits[0])];
+    var temp =phoneMap[parseInt(digits[0])];
+    var ret = phoneMap[parseInt(digits[0])];
     var workingArray;
     do{
         
-        workingArray = mappings[parseInt(digits[workingIndex])];
+        workingArray = phoneMap[parseInt(digits[workingIndex])];
         temp = ret;
         ret = [];
         
